@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+    <title>Stylistka Paznokci Wiktoria Grodoń</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2 class="header__name animate-slideup">Wiktoria Grodoń</h2>
+        <h1 class="header--primary animate-slideup">Stylistka Paznokci</h1>
+      </header>
+      <section class="portfolio section">
+        <div class="portfolio__img-container">
+          <img
+            class="portfolio__img portfolio__img-big"
+            src="img/nails-1.png"
+            alt="Nails 1"
+          />
+          <div class="portfolio__img-small-container">
+            <img
+              class="portfolio__img portfolio__img-small"
+              src="img/nails-2.png"
+              alt="Nails 2"
+            />
+            <img
+              class="portfolio__img portfolio__img-small"
+              src="img/nails-3.png"
+              alt="Nails 3"
+            />
+          </div>
+        </div>
+        <div class="portfolio__info-container">
+          <h1 class="portfolio__header heading--secondary">Moje Portfolio</h1>
+          <p class="portfolio__desc description--white">
+            Zdjęcia niektórych moich prac, na nich widać jaką uwagę przykładam
+            do szczegółów.
+          </p>
+
+          <button class="btn btn__gallery">Więcej zdjęć &rarr;</button>
+        </div>
+      </section>
+      <section class="specialties section">
+        <h2 class="specialties__header heading--secondary">
+          Moje specjalizacje
+        </h2>
+        <div class="specialties-container">
+          <figure class="specialty">
+            <img src="img/nails-1.png" alt="Nails 1" />
+            <figcaption class="specialty__caption">
+              <h3 class="specialty__header heading--tertiary">
+                Paznokcie żelowe
+              </h3>
+              <p class="specialty__desc description--grey">
+                Paznokcie żelowe to moja specjalność
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="specialty">
+            <img src="img/nails-2.png" alt="Nails 2" />
+            <figcaption class="specialty__caption">
+              <h3 class="specialty__header heading--tertiary">
+                Paznokcie hybrydowe
+              </h3>
+              <p class="specialty__desc description--grey">
+                Paznokcie hybrydowe to moja specjalność
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="specialty">
+            <img src="img/nails-3.png" alt="Nails 3" />
+            <figcaption class="specialty__caption">
+              <h3 class="specialty__header heading--tertiary">
+                Paznokcie tytanowe
+              </h3>
+              <p class="specialty__desc description--grey">
+                Paznokcie tytanowe to moja specjalność
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <h2 class="reviews__header heading--secondary">Recenzje klientów</h2>
+        <div class="reviews-container">
+          <figure class="review">
+            <img src="img/review-1.jpg" alt="Review 1" />
+            <figcaption class="review__caption">
+              <h3 class="review__header heading--tertiary">Dominika</h3>
+              <p class="review__desc description--white">
+                Polecam z całego serca, nigdy się nie zawiodłam.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="specialty">
+            <img src="img/review-2.jpg" alt="Review 2" />
+            <figcaption class="specialty__caption">
+              <h3 class="specialty__header heading--tertiary">Martyna</h3>
+              <p class="specialty__desc description--white">
+                Robię paznokcie u Wiktorii już 2 lata, za każdym razem wychodzę
+                tak samo zadowolona!
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="specialty">
+            <img src="img/review-3.jpg" alt="Review 3" />
+            <figcaption class="specialty__caption">
+              <h3 class="specialty__header heading--tertiary">Angelika</h3>
+              <p class="specialty__desc description--white">
+                Najlepsza stylistka w okolicy, jeśli jakaś dziewczyna chce
+                piękne hybrydy to bardzo polecam :)
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="contact section">
+        <h2 class="contact__header heading--secondary">Umów się na wizytę</h2>
+        <div class="contact__info-container">
+          <div class="contact__info">
+            <h3 class="contact__info-header heading--tertiary">
+              Numer telefonu
+            </h3>
+            <span class="contact__info-desc description--grey"
+              >725 465 912</span
+            >
+          </div>
+
+          <div class="contact__info">
+            <h3 class="contact__info-header heading--tertiary">Email</h3>
+            <span class="contact__info-desc description--grey"
+              >wiktoria.drobny@onet.pl</span
+            >
+          </div>
+
+          <div class="contact__info">
+            <h3 class="contact__info-header heading--tertiary">Adres</h3>
+            <span class="contact__info-desc description--grey"
+              >ul. Wyszyńskiego 73/11 <br />
+              44-300 Wodzisław Śląski</span
+            >
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>
+          &copy; Strona stworzona przez Patryk Grodoń wszystkie prawa
+          zastrzezone
+        </p>
+      </footer>
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <div class="gallery">
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+          <img src="img/nails-2.png" alt="Nails 2" class="gallery__item" />
+          <img src="img/nails-3.png" alt="Nails 3" class="gallery__item" />
+
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+          <img src="img/nails-2.png" alt="Nails 2" class="gallery__item" />
+          <img src="img/nails-3.png" alt="Nails 3" class="gallery__item" />
+
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+          <img src="img/nails-2.png" alt="Nails 2" class="gallery__item" />
+          <img src="img/nails-3.png" alt="Nails 3" class="gallery__item" />
+
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+          <img src="img/nails-2.png" alt="Nails 2" class="gallery__item" />
+          <img src="img/nails-3.png" alt="Nails 3" class="gallery__item" />
+
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+          <img src="img/nails-2.png" alt="Nails 2" class="gallery__item" />
+          <img src="img/nails-3.png" alt="Nails 3" class="gallery__item" />
+
+          <img src="img/nails-1.png" alt="Nails 1" class="gallery__item" />
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>

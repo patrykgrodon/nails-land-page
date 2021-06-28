@@ -1,0 +1,440 @@
+// Headers
+.header--primary {
+  font-size: 3rem;
+  font-weight: 300;
+
+  font-family: "Lora", serif;
+
+  @media only screen and(max-width: $bp-large) {
+    font-size: 2rem;
+  }
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 1rem;
+  }
+}
+
+.heading--secondary {
+  font-size: 8rem;
+}
+.heading--tertiary {
+  font-size: 3rem;
+}
+
+// Descriptions
+.description--white,
+.description--grey {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+}
+.description--white {
+  color: var(--color-primary);
+  margin-top: 2rem;
+}
+
+// Header elements
+.header__name {
+  font-size: 10rem;
+  text-align: center;
+
+  @media only screen and(max-width: $bp-large) {
+    font-size: 6rem;
+  }
+
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+}
+
+// Portfolio elements
+.portfolio__img-container {
+  width: 50%;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and(max-width: $bp-large) {
+    flex-direction: column;
+    height: auto;
+    max-width: 30vw;
+    min-width: 30rem;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    min-width: 20rem;
+  }
+}
+
+.portfolio__img {
+  transition: 0.3s all;
+  border: 5px solid white;
+  cursor: pointer;
+
+  @media only screen and(max-width: $bp-large) {
+    border: 3px solid white;
+  }
+}
+.portfolio__img:hover {
+  transform: scale(1.05);
+}
+
+.portfolio__img-small {
+  height: calc(50% - 3vh);
+  width: 70%;
+
+  &:first-child {
+    margin-bottom: 2vh;
+    @media only screen and(max-width: $bp-large) {
+      margin-bottom: 0;
+    }
+  }
+  // &:last-child {
+  //   margin-top: 1vh;
+  // }
+  @media only screen and(max-width: $bp-large) {
+    height: 50vh;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  @media only screen and(max-width: $bp-small) {
+    height: 30vh;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+
+    @media only screen and(max-width: $bp-large) {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+.portfolio__img-big {
+  height: 80%;
+  width: 50%;
+  margin-right: 2vh;
+  @media only screen and(max-width: $bp-large) {
+    height: 50vh;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    height: 30vh;
+  }
+}
+
+.portfolio__info-container {
+  width: 50%;
+  height: 100%;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media only screen and(max-width: $bp-large) {
+    padding-left: 4rem;
+  }
+  @media only screen and(max-width: $bp-large) {
+    order: -1;
+    // height: 30vh;
+    height: max-content;
+    width: 80vw;
+    align-items: center;
+    padding: 0;
+    margin-top: 6rem;
+  }
+}
+
+.portfolio__header {
+  @media only screen and(max-width: $bp-large) {
+    text-align: center;
+  }
+
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+}
+.portfolio__desc {
+  width: 30vw;
+  @media only screen and(max-width: $bp-large) {
+    width: 80%;
+    text-align: center;
+  }
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+// Main Button
+.btn {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-tertiary);
+  padding: 1rem;
+  margin-top: 5rem;
+
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  color: var(--color-primary);
+
+  cursor: pointer;
+
+  justify-content: flex-end;
+
+  &:hover::before {
+    height: 100%;
+    top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-secondary);
+    transition: 0.3s all ease-in-out;
+  }
+
+  @media only screen and(max-width: $bp-large) {
+    margin: 2rem 0 5rem 0;
+  }
+}
+
+// Specialties & Reviews - similar section
+.specialties-container,
+.reviews-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+
+  @media only screen and(max-width: $bp-large) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
+.specialties__header,
+.reviews__header {
+  @media only screen and(max-width: $bp-large) {
+    margin-top: 10rem;
+  }
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+}
+.specialty,
+.review {
+  width: 25rem;
+  img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 50%;
+  }
+  &__caption {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+
+    @media only screen and(max-width: $bp-large) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and(max-width: $bp-large) {
+    margin-top: 10rem;
+  }
+}
+
+// Contact elements
+.contact__header {
+  width: 50%;
+  text-align: center;
+
+  @media only screen and(max-width: $bp-large) {
+    width: 80%;
+  }
+
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+}
+.contact__info-container {
+  padding-left: 5vw;
+  width: 50%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @media only screen and(max-width: $bp-large) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 90%;
+    margin-top: 5rem;
+  }
+}
+.contact__info {
+  @media only screen and(max-width: $bp-large) {
+    width: 50%;
+    text-align: center;
+  }
+
+  @media only screen and(max-width: $bp-medium) {
+    width: 80%;
+  }
+}
+
+.contact__info-header {
+  margin-bottom: 1rem;
+
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 2.5rem;
+  }
+}
+.contact__info-desc {
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 1.5rem;
+  }
+}
+
+// Modal
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #f3f3f3;
+  padding: 5rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.1s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: scroll;
+  scroll-margin-bottom: 10rem;
+  @media only screen and(max-width: $bp-medium) {
+    padding: 2rem;
+    color: black;
+  }
+  @media only screen and(max-height: $bp-large) {
+    margin-top: 1rem;
+  }
+}
+
+// Temp Image class
+.temp__img {
+  min-width: auto;
+  max-width: 70vw;
+
+  min-height: auto;
+  max-height: 80vh;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  font-size: 6rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+
+// Overlay
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.1s;
+}
+
+// Hidden class
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+// Gallery component
+.gallery {
+  display: grid;
+  // grid-template-columns: repeat(4, 20rem);
+
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 25rem);
+  grid-auto-rows: 25rem;
+  grid-gap: 4rem;
+
+  min-width: auto;
+  max-width: 70vw;
+
+  min-height: auto;
+  max-height: 80vh;
+
+  @media only screen and(max-width: $bp-medium) {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+    grid-template-rows: repeat(auto-fit, 15rem);
+    grid-auto-rows: 15rem;
+  }
+  &__item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+// Animation classes & keyframes
+.animate-slideup {
+  transform: translateY(200px) rotate(20deg);
+  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards;
+  transform-origin: top center;
+  opacity: 0;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+}

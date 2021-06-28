@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #fff9f5;
+  --color-secondary: #9b8884;
+  --color-tertiary: #fdb8b6;
+}
+
+// Breakpoints media queries
+$bp-large: 62.5em; // 1000px
+$bp-medium: 31.25em; // 500px
+$bp-small: 21.875em; // 350px
+////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+body {
+  font-family: "Dancing Script", cursive;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
