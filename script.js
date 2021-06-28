@@ -102,7 +102,6 @@ portfolioImgContainer.addEventListener("click", function (e) {
   const currImgSrc = e.target.getAttribute("src");
 
   const html = `<img class="temp__img" src="${currImgSrc}">`;
-  // modal.innerHTML = html;
   modal.insertAdjacentHTML("afterbegin", html);
 });
 
