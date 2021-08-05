@@ -11,9 +11,7 @@ const btnCloseModal = document.querySelector(".btn--close-modal");
 const gallery = document.querySelector(".gallery");
 const btnGallery = document.querySelector(".btn__gallery");
 
-const portfolioImgContainer = document.querySelector(
-  ".portfolio__img-container"
-);
+const portfolioImgContainer = document.querySelector(".portfolio__images");
 const portfolioImg = document.querySelector(".portfolio__img");
 
 //////////////////////////////////////
